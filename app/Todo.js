@@ -15,7 +15,7 @@ var Todo = React.createClass({
   render: function() {
     return (
       <li>
-        <button onClick={this.deleteTodo}>X</button>
+        <button onClick={this.deleteTodo}>X</button>{' '}
         <span>{ this.props.text }</span>
       </li>
     );
