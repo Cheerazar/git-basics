@@ -8,10 +8,20 @@ var App = React.createClass({
     };
   },
 
+  removeTodo: function (index) {
+    var newTodos = this.state.todos.slice(0);
+    newTodos.splice(index, 1);
+    this.setState({
+      todos: newTodos
+    });
+  },
+
   render: function() {
     return (
       <div>
-        <Todos todos={this.state.todos} />
+        <Todos
+          todos={this.state.todos}
+          removeTodo={this.removeTodo} />
       </div>
     );
   }
