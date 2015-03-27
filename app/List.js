@@ -5,7 +5,7 @@ var TodoForm = require('./TodoForm');
 var List = React.createClass({
   getInitialState: function() {
     return {
-      todos: ['First Todo', 'Second Todo', 'Third Todo']
+      todos: []
     };
   },
 
