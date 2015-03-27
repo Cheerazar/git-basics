@@ -1,4 +1,6 @@
 var React = require('react');
+var Button = require('react-bootstrap').Button;
+var Glyphicon = require('react-bootstrap').Glyphicon;
 
 var Todo = React.createClass({
   propTypes: {
@@ -15,7 +17,11 @@ var Todo = React.createClass({
   render: function() {
     return (
       <li>
-        <button onClick={this.deleteTodo}>X</button>{' '}
+        <Button
+          bsStyle="danger"
+          bsSize="small"
+          onClick={this.deleteTodo}>Remove
+        </Button>{' '}
         <span>{ this.props.text }</span>
       </li>
     );

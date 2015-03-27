@@ -17,7 +17,7 @@ var Todos = React.createClass({
     }.bind(this));
 
     return (
-      <ul>
+      <ul style={{ 'listStyleType': 'none' }}>
         { todos }
       </ul>
     );
