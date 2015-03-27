@@ -18,7 +18,7 @@ var TodoForm = React.createClass({
   },
 
   handleSubmit: function (e) {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && this.state.newTodo !== '') {
       e.preventDefault();
       this.props.addTodo(this.state.newTodo);
       this.setState({
