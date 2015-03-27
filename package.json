@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/Cheerazar/git-basics",
   "dependencies": {
-    "react": "^0.12.2"
+    "react": "^0.13.0",
+    "react-bootstrap": "^0.19.1"
   },
   "devDependencies": {
     "jsx-loader": "^0.12.2",
